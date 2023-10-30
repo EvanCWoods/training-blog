@@ -2,6 +2,7 @@ import { Typography, Box, useMediaQuery } from "@mui/material";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 
+// TODO: Use Chat-GPT to refactor this code to be more readable, logical, and well documented
 const BlogPost = () => {
 	const [post, setPost] = useState<any>(undefined);
 	const isSmallScreen = useMediaQuery("(max-width:600px)");
