@@ -6,9 +6,7 @@ const router = express.Router();
 dotenv.config();
 
 router.get("/", async (req, res) => {
-	const post = await Posts.find({ published: true }).sort({
-		publishedDate: -1,
-	});
+	const post = await Posts.find({});
 	res.status(200).json(post);
 });
 
